@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Edimar Morles">
+    <meta name="description" content="Puedes editar tus memes y descargar tus creaciones con esta aplicación">
+    <meta name="keywords" content="editor,memes, imagen, texto, generador memes">
+    <!-- Facebook, Open graph -->
+    <meta property="og:title" content="Generador Memes">
+    <meta property="og:description" content="Con esta aplicacion edita tus memes y descárgalos.">
+    <meta property="og:type" content="article">
+    <meta property="og:site name" content="Generador Memes">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="">
+    <meta property="twitter:description" content="Con esta aplicacion edita tus memes y descárgalos.">
+    <meta property="twitter:image" content="">
+    <!--Links-->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/55eea74df4.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100&family=Open+Sans+Condensed:wght@300&family=Potta+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/edition-section.css">
+    <link rel="stylesheet" href="./css/aside.css">
+    <title>Editor de memes</title>
+</head>
+<body>
+
+    <!--Comienza el header-->
+
+ <header class="main-header">
+    <h1>Generador de Memes</h1>
+        <div class="panel-buttons">
+            <button class="button" id="image-button" aria-label="Editor Imagen"><i class="far fa-file-image button-icon-text" aria-hidden="true"></i>Imagen</button>
+            <button class="button" id="text-button" aria-label="Editor Texto"><i class="fas fa-font button-icon-text" aria-hidden="true"></i>Texto</button>
+            <button class="button" id="light-button" aria-label="Cambiar a Modo Oscuro"><i class="far fa-sun button-icon-text" aria-hidden="true"></i>Modo Claro</button>
+            <button class="button display-none" id="dark-button" aria-label="Cambiar a Modo Claro"><i class="far fa-moon button-icon-text" aria-hidden="true"></i>Modo Oscuro</button>
+        </div>
+ </header>
+
+<!--Termina el header-->
+
+<!--Contenedor principal/ Edition section-->
+
+<main class="main-container" >
+  <section class="section-meme">
+    <article id="meme-container" class="meme-container">
+      <p id="top-text" class="text-image">TEXTO SUPERIOR</p>
+        <div id="meme-image" class="meme-image" aria-label="Imagen de meme"></div>
+        <p id="bottom-text" class="text-image">TEXTO INFERIOR</p>
+    </article>
+
+<!--Botón de descarga-->
+
+    <button id="button-download" class="button-download">
+            DESCARGAR MEME
+      <i class="fas fa-download button-icon-text green-button-icon" aria-hidden="true"></i>
+    </button>
+  </section>
+
+<!--Comienza sección aside-Editor de imagen-->
+
+  <section class="aside-panel" id="aside-panel-container">
+    <button class="aside-button" id="aside-button" aria-label="cerrar panel lateral">
+      <i class="fas fa-times" aria-hidden="true"></i>
+    </button>
+    <aside id="image-editor-panel">
+      <h2 class="aside-title">IMAGEN</h2>
+      <section class="panel-editor">
+            
+<!--URL de la imagen-->
+
+        <article class="input-image">
+          <label class="title-image" for="url">URL</label>
+          <input type="text" name="url" id="url" aria-label="Direccion URL de la imagen">
+        </article> 
+
+<!--fondo de la imagen-->
+
+        <article class="aside-inputs">
+          <h3 class="title.inputs">FONDO</h3>
+           <div class="row-inputs-panel">
+            <div class="inputs-colors">
+              <input type="color" name="back-color" id="back-color" value="#ffffff" aria-label="Selector de color de fondo de la imagen">
+              <span id="meme-background-color" aria-hidden="true">#ffffff</span>
+            </div>
+            <select id="back-styles" class="background-styles" aria-label="Selector del tipo de estilos del fondo">
+             <option value="unset">Ninguno</option>
+             <option value="lighten">Aclarar</option>
+             <option value="darken">Oscurecer</option>
+             <option value="difference">Diferencia</option>
+             <option value="luminosity">Luminosidad</option>
+             <option value="multiply">Multiplicar</option>
+            </select>
+           </div>
+        </article>
+
+<!--filtros de la imagen-->
+   
+        <article class="aside-inputs">
+          <h3 class="title.inputs">FILTROS</h3>
+            <div class="filters-container">
+              <label class="title-filters" for="brightness">Brillo</label>
+              <input type="range" name="brightness" id="brightness" min="0" max="1" step="0.1" value="1">
+            </div>
+            <div class="filters-container">
+              <label class="title-filters" for="opacity">Opacidad</label>
+              <input type="range" name="opacity" id="opacity" min="0" max="1" step="0.1" value="1">
+            </div>
+            <div class="filters-container">
+               <label class="title-filters" for="contrast">Contraste</label>
+               <input type="range" name="contrast" id="contrast" min="100" max="1000" step="1" value="100"> 
+            </div>
+            <div class="filters-container">
+               <label class="title-filters" for="blur">Desenfoque</label>
+               <input type="range" name="blur" id="blur" min="0" max="10" step="0.1" value="0">
+            </div>
+            <div class="filters-container">
+               <label class="title-filters" for="grayscale">Escala de grises</label>
+               <input type="range" name="grayscale" id="grayscale" min="0" max="100" step="1" value="0">
+            </div>
+            <div class="filters-container">
+               <label class="title-filters" for="sepia">Sepia</label>
+               <input type="range" name="sepia" id="sepia" min="0" max="100" step="1" value="0">
+            </div>
+            <div class="filters-container">
+               <label class="title-filters" for="hue">Hue</label>
+               <input type="range" name="hue" id="hue" min="0" max="359" step="1" value="0">
+            </div>
+            <div class="filters-container">
+               <label class="title-filters" for="saturate">Saturado</label>
+               <input type="range" name="saturate" id="saturate" min="100" max="1000" step="10" value="100">
+            </div>
+            <div class="filters-container">
+               <label class="title-filters" for="invert">Negativo</label>
+               <input type="range" name="invert" id="invert" min="0" max="1" step="0.1" value="0">
+            </div>
+        </article>
+      </section>
+
+<!-- Botón reestablecer filtros -->
+
+    <button id="reset-button" class="aside-reset-button">Reestablecer filtros</button>
+    </aside>
+
+<!-- Termina el aside-Editor de imagen  -->
+
+<!-- Comienza el aside-Editor de texto  -->
+
+    <aside class="display-none" id="text-editor-panel">
+      <h2 class="aside-title">TEXTO</h2>
+        <section class="aside-section">
+
+<!-- texto superior -->
+
+          <article class="aside-inputs">
+            <label  class="h3-title"for="top-text">SUPERIOR</label>
+            <textarea type="text" name="top-text" id="top-text" aria-label="Escribe el texto superior del meme">TOP TEXT</textarea>
+            <div class="aside-inputs-ro image-background-colorw">
+                <input type="checkbox" name="no-top-text" id="no-top-text">
+                <label class="checkbox-label" for="no-top-text">Sin texto superior</label>
+            </div>
+          </article>
+
+<!-- Edición del texto inferior -->
+
+          <article class="aside-inputs">
+            <label  class="h3-title" for="bottom-text">INFERIOR</label>
+            <textarea type="text" name="bottom-text" id="bottom-text" aria-label="Escribe el texto inferior del meme">BOTTOM TEXT</textarea>
+            <div class="aside-inputs-row">
+                <input type="checkbox" name="no-bottom-text" id="no-bottom-text">
+                <label for="no-bottom-text">Sin texto inferior</label>
+            </div>
+          </article>
+
+<!-- Edición del tipo de la letra -->
+
+          <article class="aside-inputs">
+            <label class="h3-title" for="font-type">FUENTE</label>
+            <select name="font-type" id="font-type" aria-label="Selecciona el tipo de fuente">
+                <option value="Acme">Acme</option>
+                <option value="arial black">Arial Black</option>
+                <option value="Carter One">Carter One</option>
+                <option value="fredoka one">Fredoka One</option>
+                <option value="Gorditas">Gorditas</option>
+                <option value="Hachi Maru Pop">Hachi Maru Pop</option>
+                <option value="impact">Impact</option>
+                <option value="verdana">Verdana</option>
+                <option value="yusei magic">Yusei Magic</option>
+            </select>
+
+<!-- Edición del tamaño de la letra -->
+
+            <div class="aside-inputs-row font-buttons">
+                <input type="number" name="font-size" id="font-size" min="12" max="80" value="35" aria-label="Tamaño de fuente">
+
+<!--Alineación del texto --> 
+
+                <button id="left-text-button" class="align-button" aria-label="Justificar texto a la izquierda"><i class="fas fa-align-left button-icon-text" aria-hidden="true"></i></button>
+
+                <button id="center-text-button" class="align-button" aria-label="Justificar texto en el centro"><i class="fas fa-align-center button-icon-text" aria-hidden="true"></i></button>
+
+                <button id="right-text-button" class="align-button" aria-label="Justificar texto a la derecha"><i class="fas fa-align-right button-icon-text" aria-hidden="true"></i></button>
+            </div>
+          </article>
+
+<!-- Edicion del Color -->
+
+         <article class="aside-inputs">
+            <div class="aside-inputs-row">
+               <div class="editor-color">
+               <label  class="h3-title" for="font-color">COLOR</label>
+               <div class="aside-inputs-row color-inputs">
+                 <input type="color" name="font-color" id="font-color" value="#000000" aria-label="Selecciona color texto">
+                 <span id="font-color-text" aria-hidden="true">#000000</span>
+               </div>
+            </div>
+
+<!-- Color del fondo del texto -->
+
+            <div class="editor-color">
+              <label  class="h3-title" for="font-back">FONDO</label>
+              <div class="aside-inputs-row color-inputs">
+                 <input type="color" name="font-back" id="font-back" value="#ffffff" aria-label="Selecciona color de fondo del texto">
+                <span id="font-back-text" aria-hidden="true">#ffffff</span>
+              </div>
+            </div>
+         </div>
+            <div class="aside-inputs-row">
+                <input type="checkbox" name="no-font-back" id="no-font-back">
+                <label class="checkbox-label" for="no-font-back">Fondo transparente</label>
+            </div>
+         </article>
+                         
+<!-- Contorno del texto -->
+
+         <article class="aside-input">
+            <label class="aside-title">CONTORNO</label>
+            <div class="aside-inputs-buttons">
+                <button id="no-outline-text" class="button-outline" aria-label="Sin contorno de texto">Ninguno</button>
+                <button id="light-outline-text" class="button-outline" aria-label="Contorno de texto claro">Claro</button>
+                <button id="dark-outline-text" class="button-outline" aria-label="Contorno de texto oscuro">Oscuro</button>
+            </div>
+         </article>
+
+<!-- Padding / Espaciado de la fuente -->
+
+         <article class="aside-input">
+            <label class="aside-title" for="font-spacing">ESPACIADO</label>
+            <input type="number" id="font-spacing" min="10" max="50" value="35">
+         </article>
+
+<!-- Interlineado de la fuente / Alto de línea  -->
+
+          <article class="aside-input">
+             <label class="aside-title" for="line-height">INTERLINEADO</label>
+             <select class="line-height" id="line-height" aria-label="Interlineado">
+                <option value="0.8">0.8</option>
+                <option value="1">1</option>
+                <option value="1.2">1.2</option>
+                <option value="1.5">1.5</option>
+                <option value="2">2</option>
+                <option value="2.5">2.5</option>
+             </select>
+          </article>
+    </section>
+  </aside>
+</section>
+</main>
+    
+<script src="./js/main.js"></script>
+<script src="./js/image.js"></script>
+<script src="./js/text.js"></script>
+</body>
+</html>

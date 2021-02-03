@@ -1,0 +1,52 @@
+/*Modo claro*/
+
+:root{
+  --colorBackground: #f5edeb;
+  --colorHeader:#fdd225;
+  --colorAside: #b1dfdf;
+  --colorAsideButton:#fadb5e;
+  --colorAsideButtonHover:#FF6150;
+  --mainColorFont: #072448;
+  --secondColorFond: #1F306E;
+  --mainFont: 'Londrina Solid', cursive;
+  --secondFont: 'Open Sans Condensed', sans-serif;
+  --borderRadius: 15px;
+}
+
+/*Modo oscuro*/
+
+
+dark.mode{
+  --colorBackground: #442f42;
+  --colorHeader:#361D32 ;
+  --colorAside: #300f2d;
+  --colorAsideButton: #533b51;
+  --colorAsideButtonHover: #6d4769;
+  --mainColorFont: #e8eaeb;
+  --mainFont: 'Londrina Solid', cursive;
+  --secondFont: 'Open Sans Condensed', sans-serif;
+  --borderRadius: 5px;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--mainColorFont);
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  font-family: var(--mainFont);
+  height: 100vh;
+}
+
+button{
+  cursor: pointer;
+}
+
+.display-none{
+ display: none;
+} 

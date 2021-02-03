@@ -1,0 +1,68 @@
+/*Header*/
+
+.main-header{
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+    background-color: var(--colorHeader);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+h1 {
+	font-family:  var(--mainFont);
+    font-size: 3rem;
+    font-weight: bold;
+	text-align: center;
+}
+
+.panel-buttons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.button{
+    font-family: var(--mainFont);
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    margin: 2px;
+    border-radius: var(--borderRadius);
+}
+
+.button-icon-text{
+    margin-right: 0.2rem;
+    font-size: 1.2rem;
+}
+
+.button:hover,
+.button:focus{
+    background-color: var(--colorAsideButtonHover);
+    border: 1.5px solid #072448;
+    border-radius: var(--borderRadius);
+    font-size: 1rem;
+}
+
+/* Media Queries */
+
+@media (max-width: 1000px){
+    h1{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:700px){
+    h1{
+        font-size: 1.5rem;
+    }
+    .button{
+        font-size: 1rem;
+    }
+}
