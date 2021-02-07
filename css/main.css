@@ -1,33 +1,32 @@
 /*Modo claro*/
 
 :root{
-  --colorBackground: #f5edeb;
   --colorHeader:#fdd225;
-  --colorAside: #b1dfdf;
+  --colorAside: #fdd225;
+  --colorSectionMeme: #d3e6e6;
+  --colorTopText: #b1dfdf;
   --colorAsideButton:#fadb5e;
-  --colorAsideButtonHover:#FF6150;
+  --colorAsideButtonHover:#c4e7f7;
   --mainColorFont: #072448;
-  --secondColorFond: #1F306E;
+  --secondColorFont: #1F306E;
   --mainFont: 'Londrina Solid', cursive;
   --secondFont: 'Open Sans Condensed', sans-serif;
   --borderRadius: 15px;
 }
 
-/*Modo oscuro*/
-
-
-dark.mode{
-  --colorBackground: #442f42;
-  --colorHeader:#361D32 ;
-  --colorAside: #300f2d;
-  --colorAsideButton: #533b51;
-  --colorAsideButtonHover: #6d4769;
-  --mainColorFont: #e8eaeb;
+body.dark-mode{
+  --colorHeader:#380630;
+  --colorAside:#380630;
+  --colorSectionMeme: #030e1b;
+  --colorTopText:#01182e;
+  --colorAside: #310f2e;
+  --colorAsideButton: #5e545c;
+  --colorAsideButtonHover: #754b71;
+  --mainColorFont: #e7ebeb;
   --mainFont: 'Londrina Solid', cursive;
   --secondFont: 'Open Sans Condensed', sans-serif;
-  --borderRadius: 5px;
+  --borderRadius: 15px;
 }
-
 
 *{
   margin: 0;

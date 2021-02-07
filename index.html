@@ -22,6 +22,8 @@
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/55eea74df4.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100&family=Open+Sans+Condensed:wght@300&family=Potta+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Hachi+Maru+Pop&family=Hanalei&family=Londrina+Solid:wght@100&family=Pacifico&family=Permanent+Marker&family=Potta+One&family=Shadows+Into+Light&family=Yusei+Magic&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/edition-section.css">
@@ -37,8 +39,8 @@
         <div class="panel-buttons">
             <button class="button" id="image-button" aria-label="Editor Imagen"><i class="far fa-file-image button-icon-text" aria-hidden="true"></i>Imagen</button>
             <button class="button" id="text-button" aria-label="Editor Texto"><i class="fas fa-font button-icon-text" aria-hidden="true"></i>Texto</button>
-            <button class="button" id="light-button" aria-label="Cambiar a Modo Oscuro"><i class="far fa-sun button-icon-text" aria-hidden="true"></i>Modo Claro</button>
-            <button class="button display-none" id="dark-button" aria-label="Cambiar a Modo Claro"><i class="far fa-moon button-icon-text" aria-hidden="true"></i>Modo Oscuro</button>
+            <button class="button light-button" id="light-button" aria-label="Cambiar a Modo Oscuro"><i class="far fa-sun button-icon-text" aria-hidden="true"></i>Modo Claro</button>
+            <button class="button dark-button display-none" id="dark-button" aria-label="Cambiar a Modo Claro"><i class="far fa-moon button-icon-text" aria-hidden="true"></i>Modo Oscuro</button>
         </div>
  </header>
 
@@ -81,24 +83,26 @@
 
 <!--fondo de la imagen-->
 
-        <article class="aside-inputs">
-          <h3 class="title.inputs">FONDO</h3>
-           <div class="row-inputs-panel">
-            <div class="inputs-colors">
-              <input type="color" name="back-color" id="back-color" value="#ffffff" aria-label="Selector de color de fondo de la imagen">
-              <span id="meme-background-color" aria-hidden="true">#ffffff</span>
-            </div>
-            <select id="back-styles" class="background-styles" aria-label="Selector del tipo de estilos del fondo">
+       <div class="panel-control">
+         <h3 class="title.inputs">FONDO</h3>
+        <div class="panel-control-rows">
+          <div class="panel-back-color panel-control-rows">
+           <input aria-label="Color de fondo de imagen" type="color" id="input-back-color" value="#FFFFFF" aria-label="Color de fondo de imagen">
+           <span id="blend-back-color" aria-hidden="true">#FFFFFF</span>
+          </div>
+          <div class="panel-control-row">
+           <select aria-label="Modo de mezcla del color de fondo de la imagen" id="select-back-color" class="panel-control-input">
              <option value="unset">Ninguno</option>
              <option value="lighten">Aclarar</option>
              <option value="darken">Oscurecer</option>
              <option value="difference">Diferencia</option>
              <option value="luminosity">Luminosidad</option>
              <option value="multiply">Multiplicar</option>
-            </select>
-           </div>
-        </article>
-
+           </select>
+          </div>
+         </div>
+        </div> 
+        
 <!--filtros de la imagen-->
    
         <article class="aside-inputs">
@@ -158,9 +162,9 @@
 <!-- texto superior -->
 
           <article class="aside-inputs">
-            <label  class="h3-title"for="top-text">SUPERIOR</label>
-            <textarea type="text" name="top-text" id="top-text" aria-label="Escribe el texto superior del meme">TOP TEXT</textarea>
-            <div class="aside-inputs-ro image-background-colorw">
+            <label  class="top-text-filter"for="top-text">SUPERIOR</label>
+            <textarea type="text" name="top-text" id="top-aside-text" aria-label ="Escribe el texto superior del meme">Escriba aquí el texto superior</textarea>
+            <div class="aside-chekbox image-background-color">
                 <input type="checkbox" name="no-top-text" id="no-top-text">
                 <label class="checkbox-label" for="no-top-text">Sin texto superior</label>
             </div>
@@ -169,9 +173,9 @@
 <!-- Edición del texto inferior -->
 
           <article class="aside-inputs">
-            <label  class="h3-title" for="bottom-text">INFERIOR</label>
-            <textarea type="text" name="bottom-text" id="bottom-text" aria-label="Escribe el texto inferior del meme">BOTTOM TEXT</textarea>
-            <div class="aside-inputs-row">
+            <label  class="bottom-text-filter" for="bottom-text">INFERIOR</label>
+            <textarea type="text" name="Texto inferior" id="bottom-aside-text" aria-label="Escribe el texto inferior del meme">Escriba aquí el texto inferior</textarea>
+            <div class="aside-chekbox image-background-color">
                 <input type="checkbox" name="no-bottom-text" id="no-bottom-text">
                 <label for="no-bottom-text">Sin texto inferior</label>
             </div>
@@ -180,23 +184,24 @@
 <!-- Edición del tipo de la letra -->
 
           <article class="aside-inputs">
-            <label class="h3-title" for="font-type">FUENTE</label>
+            <label class="title-filters" for="font-type">FUENTE</label>
             <select name="font-type" id="font-type" aria-label="Selecciona el tipo de fuente">
-                <option value="Acme">Acme</option>
-                <option value="arial black">Arial Black</option>
-                <option value="Carter One">Carter One</option>
-                <option value="fredoka one">Fredoka One</option>
-                <option value="Gorditas">Gorditas</option>
+                <option value="Yusei Magic">Yusei Magic</option>
+                <option value="Potta One">Potta One</option>
+                <option value="Londrina Solid">Londrina Solid</option>
                 <option value="Hachi Maru Pop">Hachi Maru Pop</option>
-                <option value="impact">Impact</option>
-                <option value="verdana">Verdana</option>
-                <option value="yusei magic">Yusei Magic</option>
+                <option value="Hanalei">Hanalei</option>
+                <option value="Anton">Anton</option>
+                <option value="Pacifico">Pacifico</option>
+                <option value="Permanent Marker
+                ">Permanent Marker</option>
+                <option value="verdana">verdana</option>
             </select>
 
 <!-- Edición del tamaño de la letra -->
 
-            <div class="aside-inputs-row font-buttons">
-                <input type="number" name="font-size" id="font-size" min="12" max="80" value="35" aria-label="Tamaño de fuente">
+            <div class="panel-control-rows font-buttons" >
+                <input type="number" name="font-size" id="font-size" min="12" max="80" value="40" aria-label="Tamaño de fuente">
 
 <!--Alineación del texto --> 
 
@@ -211,9 +216,9 @@
 <!-- Edicion del Color -->
 
          <article class="aside-inputs">
-            <div class="aside-inputs-row">
+            <div class="panel-control-rows">
                <div class="editor-color">
-               <label  class="h3-title" for="font-color">COLOR</label>
+               <label  class="title-filters" for="font-color">COLOR</label>
                <div class="aside-inputs-row color-inputs">
                  <input type="color" name="font-color" id="font-color" value="#000000" aria-label="Selecciona color texto">
                  <span id="font-color-text" aria-hidden="true">#000000</span>
@@ -223,14 +228,14 @@
 <!-- Color del fondo del texto -->
 
             <div class="editor-color">
-              <label  class="h3-title" for="font-back">FONDO</label>
+              <label  class="title-filters" for="font-back">FONDO</label>
               <div class="aside-inputs-row color-inputs">
                  <input type="color" name="font-back" id="font-back" value="#ffffff" aria-label="Selecciona color de fondo del texto">
                 <span id="font-back-text" aria-hidden="true">#ffffff</span>
               </div>
             </div>
          </div>
-            <div class="aside-inputs-row">
+            <div class="aside-chekbox image-background-color">
                 <input type="checkbox" name="no-font-back" id="no-font-back">
                 <label class="checkbox-label" for="no-font-back">Fondo transparente</label>
             </div>
@@ -238,8 +243,8 @@
                          
 <!-- Contorno del texto -->
 
-         <article class="aside-input">
-            <label class="aside-title">CONTORNO</label>
+         <article class="aside-inputs" id="outline-buttons">
+            <label class="title-filters">CONTORNO</label>
             <div class="aside-inputs-buttons">
                 <button id="no-outline-text" class="button-outline" aria-label="Sin contorno de texto">Ninguno</button>
                 <button id="light-outline-text" class="button-outline" aria-label="Contorno de texto claro">Claro</button>
@@ -250,15 +255,15 @@
 <!-- Padding / Espaciado de la fuente -->
 
          <article class="aside-input">
-            <label class="aside-title" for="font-spacing">ESPACIADO</label>
+            <label class="title-filters" for="font-spacing">ESPACIADO</label>
             <input type="number" id="font-spacing" min="10" max="50" value="35">
          </article>
 
 <!-- Interlineado de la fuente / Alto de línea  -->
 
           <article class="aside-input">
-             <label class="aside-title" for="line-height">INTERLINEADO</label>
-             <select class="line-height" id="line-height" aria-label="Interlineado">
+             <label class="title-filters" for="line-height">INTERLINEADO</label>
+             <select class="line-height" id="line-height" aria-label="Interlineado" value="1.2">
                 <option value="0.8">0.8</option>
                 <option value="1">1</option>
                 <option value="1.2">1.2</option>
@@ -273,7 +278,5 @@
 </main>
     
 <script src="./js/main.js"></script>
-<script src="./js/image.js"></script>
-<script src="./js/text.js"></script>
 </body>
 </html>
