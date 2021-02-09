@@ -135,4 +135,87 @@ resetButton.addEventListener('click', ()=>{
 
 /******************************************************************************************************/
 
+/***Aside- panel texto***/
+//Texto superior e inferior del meme
+
+const inputTopText = document.getElementById('top-aside-text');
+const inputBottomText = document.getElementById('bottom-aside-text');
+const topText = document.getElementById('top-text');
+const bottomText = document.getElementById('bottom-text');
+const withoutTopText = document.getElementById('without-top-text');
+const withoutBottomText = document.getElementById('without-bottom-text');
+
+//Top text input
+inputTopText.addEventListener('keyup', () => {
+    const changedTopText = inputTopText.value;
+    topText.innerHTML = changedTopText;
+});
+
+//Bottom text input
+inputBottomText.addEventListener('keyup', () => {
+    const changedBottomText = inputBottomText.value;
+    bottomText.innerHTML = changedBottomText;
+});
+
+//checkbox sin texto superior
+withoutTopText.addEventListener('change',()=>{
+    if(withoutTopText.checked){
+        topText.classList.add('display-none');
+    } else{
+        topText.classList.remove('display-none');
+    }
+});
+
+//checkbox sin texto inferior
+withoutBottomText.addEventListener('change',()=>{
+    if(withoutBottomText.checked){
+        bottomText.classList.add('display-none');
+    } else{
+        bottomText.classList.remove('display-none');
+    }
+});
+
+//Tipo de fuente del texto meme
+
+const fontType = document.getElementById('font-type');
+
+fontType.addEventListener('change',()=>{
+    topText.style.fontFamily = `${fontType.value}`;
+    bottomText.style.fontFamily = `${fontType.value}`;
+});
+
+//Tamaño de fuente del texto meme
+
+const fontSize = document.getElementById('font-size');
+
+const fontSizeImput = () =>{
+    topText.style.fontSize = `${fontSize.value}px`;
+    bottomText.style.fontSize = `${fontSize.value}px`;
+}
+fontSize.addEventListener('input', fontSizeImput);
+
+//Alineación del texto meme
+
+const textAlignLetf = document.getElementById('button-text-left');  
+const textAlignCenter = document.getElementById('button-text-center');  
+const textAlignRight = document.getElementById('button-text-rigth');
+
+textAlignLetf.addEventListener('click', ()=>{
+    topText.style.textAlign = 'left';
+    bottomText.style.textAlign= 'left';
+});
+
+textAlignCenter.addEventListener('click', ()=>{
+    topText.style.textAlign = 'center';
+    bottomText.style.textAlign= 'center';
+});
+
+textAlignRight.addEventListener('click', ()=>{
+    topText.style.textAlign = 'right';
+    bottomText.style.textAlign= 'right';
+});
+
+
+
+
 
