@@ -52,16 +52,46 @@ downloadButton.addEventListener('click', ()=>{
     });
 });
 
-/************************************************/
+/******************************************************************************************************/
 
-/***Aside***/
+/***Aside- panel imagen***/
+// Boton cerrar barra lateral
 
 const asideButton = document.getElementById('aside-button');
+
+asideButton.addEventListener('click', ()=>{
+    asideContainer.style.display ='none';
+});
+
+//Imagen URL
+
 const memeImage = document.getElementById('meme-image');
 const urlImage = document.getElementById('url');
+
+urlImage.addEventListener('keyup', (e)=>{
+    e.preventDefault();
+    const valueUrl = urlImage.value;
+    memeImage.style.backgroundImage = `url("${valueUrl}")`;
+    memeImage.style.backgroundPosition = 'center';
+});
+
+//Fondo 
 const backColorImg = document.getElementById('input-back-color');
 const blendBackColor = document.getElementById('blend-back-color');
 const SelectBackColor = document.getElementById('select-back-color');
+
+SelectBackColor.addEventListener('change',()=>{  
+    memeImage.style.backgroundBlendMode = SelectBackColor.value;
+});
+
+backColorImg.addEventListener('input', ()=>{
+    const valueImageBack = backColorImg.value;
+    memeImage.style.backgroundColor = valueImageBack;
+    backColorImg.innerHTML = valueImageBack.toUpperCase();
+});
+
+// Filtros de la imágen
+
 const brightnessFilter = document.getElementById('brightness');
 const opacityFilter = document.getElementById('opacity');
 const contrastFilter = document.getElementById('contrast');
@@ -71,39 +101,9 @@ const sepiaFilter = document.getElementById('sepia');
 const hueFilter = document.getElementById('hue');
 const saturateFilter = document.getElementById('saturate');
 const invertFilter = document.getElementById('invert');
-const resetButton = document.getElementById('reset-button');
-
-
-// Boton cerrar barra lateral
-asideButton.addEventListener('click', ()=>{
-    asideContainer.style.display ='none';
-});
-
-urlImage.addEventListener('keyup', (e)=>{
-    e.preventDefault();
-    const valueUrl = urlImage.value;
-    imageMeme.style.backgroundImage = `url("${valueUrl}")`;
-    imageMeme.style.backgroundPosition = 'center';
-
-});
-
-SelectBackColor.addEventListener('change',()=>{  
-    imageMeme.style.backgroundBlendMode = SelectBackColor.value;
-});
-
-backColorImg.addEventListener('input', ()=>{
-    const valueImageBack = backColorImg.value;
-    memeImage.style.backgroundColor = valueImageBack;
-    backColorImg.innerHTML = valueImageBack.toUpperCase();
-});
-
-
-/****************Falta**************** */
-
-// FILTROS 
 
 const filtrosImagen = () =>{
-    imageMeme.style.filter = `brightness(${brightnessFilter.value}) opacity(${opacityFilter.value}) contrast(${contrastFilter.value}%) blur(${blurFilter.value}px) grayscale(${grayscaleFilter.value}%) sepia(${sepiaFilter.value}%) hue-rotate(${hueFilter.value}deg) saturate(${saturateFilter.value}%) invert(${invertFilter.value})`;
+    memeImage.style.filter = `brightness(${brightnessFilter.value}) opacity(${opacityFilter.value}) contrast(${contrastFilter.value}%) blur(${blurFilter.value}px) grayscale(${grayscaleFilter.value}%) sepia(${sepiaFilter.value}%) hue-rotate(${hueFilter.value}deg) saturate(${saturateFilter.value}%) invert(${invertFilter.value})`;
 };
 
 brightnessFilter.addEventListener('change', filtrosImagen);
@@ -116,7 +116,11 @@ hueFilter.addEventListener('change', filtrosImagen);
 saturateFilter.addEventListener('change', filtrosImagen);
 invertFilter.addEventListener('change', filtrosImagen);
 
-resetFiltersButton.addEventListener('click', ()=>{
+//Reestablecer Filtros
+
+const resetButton = document.getElementById('reset-button');
+
+resetButton.addEventListener('click', ()=>{
     brightnessFilter.value = '1';
     opacityFilter.value= '1';
     contrastFilter.value= '100';
@@ -128,3 +132,7 @@ resetFiltersButton.addEventListener('click', ()=>{
     invertFilter.value = '0';
     filtrosImagen();
 });
+
+/******************************************************************************************************/
+
+
