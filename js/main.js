@@ -215,6 +215,32 @@ textAlignRight.addEventListener('click', ()=>{
     bottomText.style.textAlign= 'right';
 });
 
+//Color del texto y color del fondo del texto
+
+const fontColor = document.getElementById('font-color');
+const fontBackgroundColor = document.getElementById('font-back');
+const withoutBackColor = document.getElementById('without-back-color');
+const textFontColor = document.getElementById('font-color-text');
+const textBackColor = document.getElementById('font-back-text');
+
+fontColor.addEventListener('input',()=>{
+    const selectedColor = fontColor.value;
+    topText.style.color = selectedColor;
+    bottomText.style.color = selectedColor;
+    textFontColor.innerHTML = selectedColor.toUpperCase();
+});
+
+fontBackgroundColor.addEventListener('input',()=>{
+    if(!withoutBackColor.checked){
+        const selectedBackColor = fontBackgroundColor.value;
+        topText.style.backgroundColor = selectedBackColor;
+        bottomText.style.backgroundColor = selectedBackColor;
+        textBackColor.innerHTML = selectedBackColor.toUpperCase();
+    }
+});
+
+//Contorno del texto del meme
+
 
 
 
