@@ -239,7 +239,88 @@ fontBackgroundColor.addEventListener('input',()=>{
     }
 });
 
-//Contorno del texto del meme
+//Fondo transparente
+
+const withoutBack = document.getElementById('without-back-color');
+
+withoutBack.addEventListener('change',()=>{
+    if(withoutBack.checked){
+        topText.style.backgroundColor = 'transparent';
+        topText.style.position = 'absolute';
+        topText.style.top = '0';
+        bottomText.style.backgroundColor = 'transparent';
+        bottomText.style.position = 'absolute';
+        bottomText.style.bottom = '0';
+
+    }else{
+        topText.style.backgroundColor = `${fontBackgroundColor.value}`;
+        topText.style.position = 'static';
+        bottomText.style.backgroundColor = `${fontBackgroundColor.value}`;
+        bottomText.style.position = 'static';
+    }
+});
+
+//Contorno del texto
+
+const outlineNone = document.getElementById('no-outline-text');
+const lightOutline = document.getElementById('light-outline-tex');
+const darkOutline = document.getElementById('dark-outline-text');
+
+
+outlineNone.addEventListener('click', ()=>{
+    topText.style.webkitTextStroke  = 'transparent';
+    bottomText.style.webkitTextStroke = 'transparent';
+});
+
+lightOutline.addEventListener('click', ()=>{
+    topText.style.webkitTextStroke  = '1px white';
+    bottomText.style.webkitTextStroke = '1px white';
+});
+
+darkOutline.addEventListener('click', ()=>{
+    topText.style.webkitTextStroke  = '2px black';
+    bottomText.style.webkitTextStroke = '2px black';
+});
+
+/*
+outlineNone.addEventListener('click', (e) =>{
+    e.preventDefault();
+    outlineNone.checked = topText.style.textShadow = "none";
+    outlineNone.checked = bottomText.style.textShadow = "none";
+});
+
+lightOutline.addEventListener('click', (e) =>{
+    e.preventDefault();
+    lightOutline.checked = topText.style.textShadow = "2px 2px 0 #ffffff, 2px -2px 0 #ffffff, -2px 2px 0 #ffffff, -2px -2px 0 #ffffff, 2px 0px 0 #ffffff, 0px 2px 0 #ffffff, -2px 0px 0 #ffffff, 0px -2px 0 #ffffff";
+    lightOutline.checked = bottomText.style.textShadow = "2px 2px 0 #ffffff, 2px -2px 0 #ffffff, -2px 2px 0 #ffffff, -2px -2px 0 #ffffff, 2px 0px 0 #ffffff, 0px 2px 0 #ffffff, -2px 0px 0 #ffffff, 0px -2px 0 #ffffff";
+});
+
+
+darkOutline .addEventListener('click', (e) =>{
+    e.preventDefault();
+    darkOutline .checked = topText.style.textShadow = "2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000";
+    darkOutline .checked = bottomText.style.textShadow = "2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000";
+});
+*/
+
+// Espaciado del texto
+
+const fontSpacing = document.getElementById('font-spacing');
+
+const spacing = () =>{
+    topText.style.padding = `${fontSpacing.value}px 40px`;
+    bottomText.style.padding = `${fontSpacing.value}px 40px`;
+}
+fontSpacing.addEventListener('input', spacing);
+
+// Interlineado del texto
+
+const lineSpacing = document.getElementById('line-height');
+
+lineSpacing.addEventListener('change', ()=>{
+    topText.style.lineHeight = `${lineSpacing.value}`;
+    bottomText.style.lineHeight = `${lineSpacing.value}`;
+});
 
 
 
