@@ -18,6 +18,12 @@ h1 {
 	text-align: center;
 }
 
+.author{
+    font-family: var(--mainFont);
+    color: var(--mainColorFont);
+    font-size: 1rem;
+}
+
 .panel-buttons{
     width: 100%;
     display: flex;
@@ -44,7 +50,7 @@ h1 {
 
 .button:hover,
 .button:focus{
-    background-color: var(--colorAsideButtonHover);
+    background-color: var(--colorButtonHover);
     border: 1.5px solid #072448;
     border-radius: var(--borderRadius);
     font-size: 1rem;

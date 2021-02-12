@@ -3,10 +3,10 @@
 :root{
   --colorHeader:#fdd225;
   --colorAside: #fdd225;
-  --colorSectionMeme: #d3e6e6;
+  --colorSectionMeme: #E3E3E3;
   --colorTopText: #b1dfdf;
-  --colorAsideButton:#fadb5e;
-  --colorAsideButtonHover:#c4e7f7;
+  --colorAsideButton:#f7dd76;
+  --colorButtonHover:#F782C2;
   --mainColorFont: #072448;
   --secondColorFont: #1F306E;
   --mainFont: 'Londrina Solid', cursive;
@@ -21,7 +21,7 @@ body.dark-mode{
   --colorTopText:#01182e;
   --colorAside: #310f2e;
   --colorAsideButton: #5e545c;
-  --colorAsideButtonHover: #754b71;
+  --colorButtonHover: #795475;
   --mainColorFont: #e7ebeb;
   --mainFont: 'Londrina Solid', cursive;
   --secondFont: 'Open Sans Condensed', sans-serif;

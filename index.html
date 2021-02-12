@@ -35,7 +35,7 @@
     <!--Comienza el header-->
 
  <header class="main-header">
-    <h1>Generador de Memes</h1>
+    <h1>Generador de Memes </h1> <span class="author">by Edimar Morles ❤️</span>
         <div class="panel-buttons">
             <button class="button" id="image-button" aria-label="Editor Imagen"><i class="far fa-file-image button-icon-text" aria-hidden="true"></i>Imagen</button>
             <button class="button" id="text-button" aria-label="Editor Texto"><i class="fas fa-font button-icon-text" aria-hidden="true"></i>Texto</button>
@@ -77,14 +77,14 @@
 <!--URL de la imagen-->
 
         <article class="input-image">
-          <label class="title-image" for="url">URL</label>
-          <input type="text" name="url" id="url" aria-label="Direccion URL de la imagen">
+          <label class="title-url" for="url">URL</label>
+          <input class="url-image" type="text" name="url" id="url" aria-label="Direccion URL de la imagen">
         </article> 
 
 <!--fondo de la imagen-->
 
        <div class="panel-control">
-         <h3 class="title.inputs">FONDO</h3>
+         <h3 class="title-inputs">FONDO</h3>
         <div class="panel-control-rows">
           <div class="panel-back-color panel-control-rows">
            <input aria-label="Color de fondo de imagen" type="color" id="input-back-color" value="#FFFFFF" aria-label="Color de fondo de imagen">
@@ -106,7 +106,7 @@
 <!--filtros de la imagen-->
    
         <article class="aside-inputs">
-          <h3 class="title.inputs">FILTROS</h3>
+          <h3 class="title-inputs">FILTROS</h3>
             <div class="filters-container">
               <label class="title-filters" for="brightness">Brillo</label>
               <input type="range" name="brightness" id="brightness" min="0" max="1" step="0.1" value="1">
@@ -156,13 +156,13 @@
 <!-- Comienza el aside-Editor de texto  -->
 
     <aside class="display-none" id="text-editor-panel">
-      <h2 class="aside-title">TEXTO</h2>
+      <h2 class="aside-title" id="aside-title-texto">TEXTO</h2>
         <section class="aside-section">
 
 <!-- texto superior -->
 
           <article class="aside-inputs">
-            <label  class="top-text-filter"for="top-text">SUPERIOR</label>
+            <label  class="title-inputs"for="top-text">SUPERIOR</label>
             <textarea type="text" name="top-text" id="top-aside-text" aria-label ="Escribe el texto superior del meme">Escriba aquí el texto superior</textarea>
             <div class="aside-chekbox image-background-color">
                 <input type="checkbox" name="no-top-text" id="without-top-text">
@@ -173,7 +173,7 @@
 <!-- Edición del texto inferior -->
 
           <article class="aside-inputs">
-            <label  class="bottom-text-filter" for="bottom-text">INFERIOR</label>
+            <label  class="title-inputs" for="bottom-text">INFERIOR</label>
             <textarea type="text" name="Texto inferior" id="bottom-aside-text" aria-label="Escribe el texto inferior del meme">Escriba aquí el texto inferior</textarea>
             <div class="aside-chekbox image-background-color">
                 <input type="checkbox" name="no-bottom-text" id="without-bottom-text">
@@ -184,7 +184,7 @@
 <!-- Edición del tipo de la letra -->
 
           <article class="aside-inputs">
-            <label class="title-filters" for="font-type">FUENTE</label>
+            <label class="title-inputs" for="font-type">FUENTE</label>
             <select name="font-type" id="font-type" aria-label="Selecciona el tipo de fuente">
                 <option value="Yusei Magic">Yusei Magic</option>
                 <option value="Potta One">Potta One</option>
@@ -218,7 +218,7 @@
          <article class="aside-inputs">
             <div class="panel-control-rows">
                <div class="editor-color">
-               <label  class="title-filters" for="font-color">COLOR</label>
+               <label  class="title-inputs" for="font-color">COLOR</label>
                <div class="aside-inputs-row color-inputs">
                  <input type="color" name="font-color" id="font-color" value="#000000" aria-label="Selecciona color texto">
                  <span id="font-color-text" aria-hidden="true">#000000</span>
@@ -228,10 +228,10 @@
 <!-- Color del fondo del texto -->
 
             <div class="editor-color">
-              <label  class="title-filters" for="font-back">FONDO</label>
+              <label  class="title-inputs" for="font-back">FONDO</label>
               <div class="aside-inputs-row color-inputs">
                  <input type="color" name="font-back" id="font-back" value="#ffffff" aria-label="Selecciona color de fondo del texto">
-                <span id="font-back-text" aria-hidden="true">#ffffff</span>
+                <span id="font-back-text" aria-hidden="true">#FFFFFF</span>
               </div>
             </div>
          </div>
@@ -244,7 +244,7 @@
 <!-- Contorno del texto -->
 
          <article class="aside-inputs" id="outline-buttons">
-            <label class="title-filters">CONTORNO</label>
+            <label class="title-inputs">CONTORNO</label>
             <div class="aside-inputs-buttons">
                 <button id="no-outline-text" class="button-outline" aria-label="Sin contorno de texto">Ninguno</button>
                 <button id="light-outline-text" class="button-outline" aria-label="Contorno de texto claro">Claro</button>
@@ -255,14 +255,14 @@
 <!-- Padding / Espaciado de la fuente -->
 
          <article class="aside-input">
-            <label class="title-filters" for="font-spacing">ESPACIADO</label>
+            <label class="title-inputs" for="font-spacing">ESPACIADO</label>
             <input type="number" id="font-spacing" min="10" max="50" value="35">
          </article>
 
 <!-- Interlineado de la fuente / Alto de línea  -->
 
           <article class="aside-input">
-             <label class="title-filters" for="line-height">INTERLINEADO</label>
+             <label class="title-inputs" for="line-height">INTERLINEADO</label>
              <select class="line-height" id="line-height" aria-label="Interlineado" value="1.2">
                 <option value="0.8">0.8</option>
                 <option value="1">1</option>
