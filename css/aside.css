@@ -70,12 +70,6 @@ input, textarea, select{
     margin-top: 0.05rem;
 }
 
-input:hover, input:focus, 
-textarea:hover, textarea:focus,
-select:hover, select:focus{
-    background-color: var(--colorButtonHover);
-}
-
 /*Título "imagen" del panel*/
 
 .aside-title{
@@ -104,6 +98,10 @@ select:hover, select:focus{
     width: 100%;
 }
 
+#url:hover,#url:focus{
+    background-color: var(--colorButtonHover);
+}
+
 /*Fondo de la imagen*/
 
 .panel-control-rows {
@@ -116,7 +114,7 @@ select:hover, select:focus{
     width: calc(50% - 5px);
     margin-bottom: 0;
 }
-   
+
 .panel-back-color {
     display: flex;
     align-items: center;
@@ -125,18 +123,20 @@ select:hover, select:focus{
     margin-top: 0.5rem;
     margin-left: 0.5rem;
     position: relative;
-    height: 6vh;
+    height: 6.3vh;
     width: 7rem;
 }
+
 .panel-back-color > input[type='color'] {
-    width: 70%;
+    width: 60%;
     position: relative;
     display: flex;
     height: auto;
     border-radius: 10px;
     background-color: transparent;
-    margin-left: 1%;
     border: 0;
+    padding: auto;
+    margin-right: 0.3rem;
 }
  
 .panel-back-color > span {
@@ -144,12 +144,11 @@ select:hover, select:focus{
     position: absolute;
     left: 45px;
     top: 50%;
-    font-size: 14px;
     background-color: var(--colorAsideButton);
     transform: translateY(-50%); 
-    font-size: 0.9rem;
-    margin-left: 1%;
-    margin-right: 2%;
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+    margin-right: 0.3;
     font-family: var(--mainFont);
     color:var(--mainColorFont)
 }
@@ -170,12 +169,16 @@ select:hover, select:focus{
     box-sizing: border-box;
 }
 
+#select-back-color:hover,#select-back-color:focus{
+    background-color: var(--colorButtonHover);
+}
+
 /*selector fondo de 
 imagen*/
 
 #select-back-color{
     background-color: var(--colorAsideButton);
-    height: 6vh;
+    height: 6.3vh;
 }
 
 /*filtros de la imagen*/
@@ -206,7 +209,7 @@ input[type='range']{
     cursor: pointer;
     outline: none;
     position: relative;
-    margin-top: 1.5rem;
+    margin-top: 1.48rem;
     margin-bottom: 1.72rem;
     padding: 0.5rem;
 }
@@ -238,6 +241,12 @@ Comienza el editor de texto
     width: 10%;
 }
 
+#top-aside-text:hover,
+#top-aside-text:focus,
+#bottom-aside-text:hover,#bottom-aside-text:focus{
+    background-color: var(--colorButtonHover);
+}
+
 /*Tipo de fuente*/  
 
 #font-type{
@@ -245,6 +254,11 @@ Comienza el editor de texto
     background-color: var(--colorAsideButton);
     margin-bottom: 0;
     font-size: 1rem;
+}
+
+#font-type:hover,#font-type:focus,
+#font-size:hover,#font-size:focus{
+    background-color: var(--colorButtonHover);
 }
 
 /*Tamaño de fuente*/  
@@ -272,6 +286,13 @@ Comienza el editor de texto
     align-items: center;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+#button-text-left:hover,#button-text-left:focus,
+#button-text-center:hover,#button-text-center:focus,
+#button-text-rigth:hover,#button-text-rigth:focus
+{
+    background-color: var(--colorButtonHover);
 }
 
 /*Color del texto*/ 
@@ -338,6 +359,12 @@ Comienza el editor de texto
     outline: none;
 }
 
+#no-outline-text:hover,#no-outline-text:focus,
+#light-outline-text:hover,#light-outline-text:focus,
+#dark-outline-text:hover,#dark-outline-text:focus{
+    background-color: var(--colorButtonHover);
+}
+
 /*Espaciado e interlineado del texto*/ 
 
 #font-spacing, #line-height{
@@ -354,6 +381,12 @@ input[type='number']{
     height: 1.5rem;
     margin-top: 0.5rem;
 }
+
+#font-spacing:hover,#font-spacing:focus,
+#line-height:hover,#line-height:focus{
+    background-color: var(--colorButtonHover);
+}
+
 /* Media Queries */
 
 @media(max-width: 1300px){
