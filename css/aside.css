@@ -14,13 +14,14 @@
     position: absolute;
 }
 
-.aside-input{
-    margin-top: 1.5rem;
+.aside-input,.aside-inputs{
+    margin-top: 0.5rem;
+    margin-bottom: 0.551rem;
 }
 
 /*Botón del aside-cerrar panel lateral*/
 
-.aside-button{
+#aside-button{
     background-color: transparent;
     border: none;
     padding: 0.5rem;
@@ -205,8 +206,8 @@ input[type='range']{
     cursor: pointer;
     outline: none;
     position: relative;
-    margin-top: 1.8rem;
-    margin-bottom: 1.8rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.72rem;
     padding: 0.5rem;
 }
 
@@ -229,7 +230,6 @@ Comienza el editor de texto
     padding: 0.5rem;
     background-color: var(--colorAsideButton);
     margin-bottom: 0;
-
 }
 
 #without-top-text, #without-bottom-text,#without-back-color {
