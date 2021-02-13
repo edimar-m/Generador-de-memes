@@ -40,6 +40,7 @@ body{
   flex-direction: column;
   font-family: var(--mainFont);
   height: 100vh;
+  width: auto;
 }
 
 button{

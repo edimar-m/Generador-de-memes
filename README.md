@@ -1,10 +1,11 @@
-# Generador de memes
+# Generador de memes 📱
 
-  ### Este proyecto está realizado como requisito de evaluación final del segundo módulo del curso de desarrollo FronTend de ADA ITW.
+  ### Esta aplicación es un editor de memes  en la cual puedes manipular el texto, la imagen, y diferentes filtros.
+  ### Cuando te guste la imagen editada podrás descargarla!😄
 
-  ### Para su desarrollo se ha utilizado los recursos aprendidos durante el primer módulo (HTML5 y CSS3) y se ha incorporado JavaScript para agragar funcionalidad a la app.
+  ### Para su desarrollo se utilizó HTML5 y CSS3 para la estructura y los estilos y se ha incorporado JavaScript para agragar funcionalidad a la app.
 
-  ### Para acceder a la app Generador de memes, puede hacer click en el siguiente [enlace](), en caso de presentar algún inconveniente también puede hacerlo desde [acá]().
+  ### Si quieres acceder a la app Generador de memes, puede hacer click en el siguiente [enlace](https://edimar-m.github.io/Generador-de-memes/.).
 
   <br>
 
@@ -35,10 +36,14 @@
 - JavaScript
 
 ***
-## Este es el resultado final de mi proyecto:
+## Este es el resultado final del proyecto:
 <br>
 
-![images]()
+### Vista del modo claro
+![images](images\screencapture-file-C-Users-edima-Desktop-ada-proyecto-generador-de-memes-index-html-2021-02-12-23_47_51.png)
+
+### Vista del modo oscuro
+![images](images\screencapture-file-C-Users-edima-Desktop-ada-proyecto-generador-de-memes-index-html-2021-02-12-23_48_59.png)
 
 ***
 ## Agradecimientos🙌
@@ -48,7 +53,7 @@
 
 ### Agradezco a [Leydy](https://github.com/leydyk93/),  por ayudarnos siempre que lo necesitamos y estar siempre con la mejor voluntad, reforzando los conocimientos y aclarando nuestras inquietudes.
 
-### Agradezco a mis compañeras de clases 💜por estar siempre, por aclarar inquietudes y ayudarme a encontrar errores cuando algo no funcionaba, por la buena energía y hacer de la virtualidad del curso un ámbiente cálido y ameno en el que la pantalla no es una barrera.
+### Agradezco a mis compañeras de clases 💜por estar siempre, por aclarar inquietudes y ayudarme a encontrar errores cuando algo no funcionaba.
 
 ### Agradezco a ADA ITW por brindarme la oportunidad de aprender desarrollo web con un programa de calidad, haciendome sentir acompañada y segura de mi aprendizaje durante el proceso.
 

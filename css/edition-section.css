@@ -4,9 +4,10 @@
    display: flex;
    flex-grow: 1;
    height: auto;
+   width: 90%;
 }
 .section-meme{
-    width: 100%;
+    width: 90%;
     height: 100%;
     background-color: var(--colorSectionMeme);
     display: flex;
