@@ -4,7 +4,7 @@
     background-color: var(--colorHeader);
     box-shadow: 5px 5px 20px #0f2972;
     width: 15rem;
-    height: auto;
+    height: 142.5vh;
     padding: 0.5rem;
     display: flex;
     flex-direction: column;
