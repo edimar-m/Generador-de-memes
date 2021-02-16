@@ -38,10 +38,10 @@
 <br>
 
 ### Vista del modo claro
-![images](images\Meme-modo-claro.png)
+![images](C:\Users\edima\Desktop\ada\proyecto-generador-de-memes\images\screencapture-file-C-Users-edima-Desktop-ada-proyecto-generador-de-memes-index-html-2021-02-16-16_27_05.png)
 
 ### Vista del modo oscuro
-![images](images\Meme-modo-oscuro.png)
+![images](C:\Users\edima\Desktop\ada\proyecto-generador-de-memes\images\screencapture-file-C-Users-edima-Desktop-ada-proyecto-generador-de-memes-index-html-2021-02-16-16_31_02.png)
 
 ***
 ## Agradecimientos🙌
