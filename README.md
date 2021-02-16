@@ -1,7 +1,7 @@
 # Generador de memes 📱
 
-  ### Esta aplicación es un editor de memes  en la cual puedes manipular el texto, la imagen, y diferentes filtros.
-  ### Cuando te guste la imagen editada podrás descargarla!😄
+  ### Esta aplicación se trata de un editor de memes en la cual se puede manipular el texto, la imagen, y hacer uso de diferentes filtros.
+  ### Cuando la imagen esté completamente editada podrás descargarla!😄
 
   ### Para su desarrollo se utilizó HTML5 y CSS3 para la estructura y los estilos y se ha incorporado JavaScript para agragar funcionalidad a la app.
 
@@ -12,12 +12,10 @@
   ***
   <br>
   
-
   ### Para obtener el código de éste proyecto debe seguir los siguientes pasos:
   <br>
 
-  - Ir al [repositorio]()
-
+  - Ir al [repositorio](https://github.com/edimar-m/Generador-de-memes)
   - darle click al botón de forkear
   - darle click al botón de code
   - copiar la URL
@@ -40,22 +38,17 @@
 <br>
 
 ### Vista del modo claro
-![images](images\screencapture-file-C-Users-edima-Desktop-ada-proyecto-generador-de-memes-index-html-2021-02-12-23_47_51.png)
+![images](images\Meme-modo-claro.png)
 
 ### Vista del modo oscuro
-![images](images\screencapture-file-C-Users-edima-Desktop-ada-proyecto-generador-de-memes-index-html-2021-02-12-23_48_59.png)
+![images](images\Meme-modo-oscuro.png)
 
 ***
 ## Agradecimientos🙌
 ***
-### Agradezco a nuestro profesor, [Jonh Parra](https://github.com/Jonhks) por tener la paciencia y la vocación de enseñarnos con buena disposición y esfuerzo en este nuevo camino. 
-###.
+### Agradezco a nuestro profesor, [Jonh Parra](https://github.com/Jonhks) por enseñarnos con tanta paciencia y la mejor disposición y a [Leydy](https://github.com/leydyk93/),  por ayudarnos siempre que lo necesitamos y estar siempre con la mejor voluntad.
 
-### Agradezco a [Leydy](https://github.com/leydyk93/),  por ayudarnos siempre que lo necesitamos y estar siempre con la mejor voluntad, reforzando los conocimientos y aclarando nuestras inquietudes.
-
-### Agradezco a mis compañeras de clases 💜por estar siempre, por aclarar inquietudes y ayudarme a encontrar errores cuando algo no funcionaba.
-
-### Agradezco a ADA ITW por brindarme la oportunidad de aprender desarrollo web con un programa de calidad, haciendome sentir acompañada y segura de mi aprendizaje durante el proceso.
+### Agradezco a mis compañeras de clases 💜por estar siempre, por aclarar inquietudes y ayudarme a encontrar errores cuando algo no funcionaba y agradezco a ADA ITW por brindarme la oportunidad de aprender desarrollo web con un programa de calidad.
 
 <br>
 
