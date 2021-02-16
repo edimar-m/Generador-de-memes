@@ -16,7 +16,7 @@
   ### Para obtener el código de éste proyecto debe seguir los siguientes pasos:
   <br>
 
-  - Ir al [repositorio](https://github.com/edimar-m/Generador-de-memes)
+  - Ir al [repositorio]()
 
   - darle click al botón de forkear
   - darle click al botón de code
@@ -40,10 +40,10 @@
 <br>
 
 ### Vista del modo claro
-![images](images\generador-de-memes-modo-claro.png)
+![images](images\screencapture-file-C-Users-edima-Desktop-ada-proyecto-generador-de-memes-index-html-2021-02-12-23_47_51.png)
 
 ### Vista del modo oscuro
-![images](images\generador-de-meme-modo-oscuro.png)
+![images](images\screencapture-file-C-Users-edima-Desktop-ada-proyecto-generador-de-memes-index-html-2021-02-12-23_48_59.png)
 
 ***
 ## Agradecimientos🙌

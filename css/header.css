@@ -1,7 +1,7 @@
 /*Header*/
 
 .main-header{
-    width: 90%;
+    width: auto;
     height: auto;
     padding: 0.5rem;
     background-color: var(--colorHeader);

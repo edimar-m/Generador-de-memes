@@ -1,20 +1,19 @@
 /* Contenedor principal, sección de edición del meme*/
 
 .main-container{
-   display: flex;
-   flex-grow: 1;
-   height: auto;
-   width: 90%;
+    background-color:  var(--colorSectionMeme);
 }
 .section-meme{
-    width: 90%;
-    height: 100%;
+    width: 90vw;
+    height: 118.5vh;
     background-color: var(--colorSectionMeme);
     display: flex;
     flex-grow: 1;
     flex-direction: column;
     position: relative;
     align-items: center;
+    margin: 0;
+    padding-left: 10%;
 }
 
 .meme-container{
@@ -26,7 +25,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: relative;   
 }
 
 .meme-image{
@@ -68,4 +67,29 @@
 
 .button-download:hover, .download-button:focus {
     background-color: var(--colorButtonHover);
+}
+
+/* Media Queries */
+
+@media (min-width: 500px) and (max-width: 1100px) {
+    #top-text, #bottom-text{
+        font-size: 2rem;
+        height: 15%;
+    }
+    .meme-container{
+        width: 100%;
+        height: 90%;
+    }
+}
+@media (max-width:500px){
+    #top-text, #bottom-text{
+        font-size: 1.5rem;
+        height: 10%;
+        padding-top: 0;
+    }
+    .meme-container{
+        width: 100%;
+        margin-top: 15%;
+        height: 50%;
+    }
 }
