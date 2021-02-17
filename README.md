@@ -38,14 +38,15 @@
 <br>
 
 ### Vista del modo claro
-![images](C:\Users\edima\Desktop\ada\proyecto-generador-de-memes\images\screencapture-file-C-Users-edima-Desktop-ada-proyecto-generador-de-memes-index-html-2021-02-16-16_27_05.png)
+![images](.\images\screencapture-proyecto-generador-de-memes.png)
 
 ### Vista del modo oscuro
-![images](C:\Users\edima\Desktop\ada\proyecto-generador-de-memes\images\screencapture-file-C-Users-edima-Desktop-ada-proyecto-generador-de-memes-index-html-2021-02-16-16_31_02.png)
+![images](.\images\screencapture-proyecto-generador-de-memes-oscuro.png)
 
 ***
 ## Agradecimientos🙌
 ***
+
 ### Agradezco a nuestro profesor, [Jonh Parra](https://github.com/Jonhks) por enseñarnos con tanta paciencia y la mejor disposición y a [Leydy](https://github.com/leydyk93/),  por ayudarnos siempre que lo necesitamos y estar siempre con la mejor voluntad.
 
 ### Agradezco a mis compañeras de clases 💜por estar siempre, por aclarar inquietudes y ayudarme a encontrar errores cuando algo no funcionaba y agradezco a ADA ITW por brindarme la oportunidad de aprender desarrollo web con un programa de calidad.
