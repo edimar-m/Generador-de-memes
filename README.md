@@ -16,7 +16,7 @@
   ### Para obtener el código de éste proyecto debe seguir los siguientes pasos:
   <br>
 
-  - Ir al [repositorio]()
+  - Ir al [repositorio](https://github.com/edimar-m/Generador-de-memes)
 
   - darle click al botón de forkear
   - darle click al botón de code
@@ -40,22 +40,17 @@
 <br>
 
 ### Vista del modo claro
-![images](images\screencapture-file-C-Users-edima-Desktop-ada-proyecto-generador-de-memes-index-html-2021-02-12-23_47_51.png)
+![images](images\screencapture-proyecto-generador-de-memes-claro.png)
 
 ### Vista del modo oscuro
-![images](images\screencapture-file-C-Users-edima-Desktop-ada-proyecto-generador-de-memes-index-html-2021-02-12-23_48_59.png)
+![images](images\screencapture-proyecto-generador-de-memes-oscuro.png)
 
 ***
 ## Agradecimientos🙌
 ***
-### Agradezco a nuestro profesor, [Jonh Parra](https://github.com/Jonhks) por tener la paciencia y la vocación de enseñarnos con buena disposición y esfuerzo en este nuevo camino. 
-###.
+### Agradezco a nuestro profesor, [Jonh Parra](https://github.com/Jonhks) por tener la paciencia para enseñarnos con buena disposición y con gran entusiasmo, agradezco a [Leydy](https://github.com/leydyk93/),  por ayudarnos siempre que lo necesitamos.
 
-### Agradezco a [Leydy](https://github.com/leydyk93/),  por ayudarnos siempre que lo necesitamos y estar siempre con la mejor voluntad, reforzando los conocimientos y aclarando nuestras inquietudes.
-
-### Agradezco a mis compañeras de clases 💜por estar siempre, por aclarar inquietudes y ayudarme a encontrar errores cuando algo no funcionaba.
-
-### Agradezco a ADA ITW por brindarme la oportunidad de aprender desarrollo web con un programa de calidad, haciendome sentir acompañada y segura de mi aprendizaje durante el proceso.
+### Agradezco a mis compañeras de clases 💜por estar siempre, por aclarar inquietudes y ayudarme a encontrar errores cuando algo no funcionaba y a ADA ITW por brindarme la oportunidad de aprender desarrollo web con un programa de calidad.
 
 <br>
 
