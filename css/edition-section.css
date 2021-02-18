@@ -76,6 +76,7 @@
     #top-text, #bottom-text{
         font-size: 2rem;
         height: 15%;
+        word-wrap: break-word;
     }
     .meme-container{
         width: 100%;
@@ -90,11 +91,12 @@
         font-size: 1.5rem;
         height: 10%;
         padding-top: 10%;
+        word-wrap: break-word;
     }
     .meme-container{
         width: 100%;
         margin-top: 15%;
-        height: 70%;
+        height: 60%;
     }
     .meme-image{
         height: 50vh;
