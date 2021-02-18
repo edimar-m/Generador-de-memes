@@ -40,10 +40,10 @@
 <br>
 
 ### Vista del modo claro
-![images](images\screencapture-proyecto-generador-de-memes-claro.png)
+![images](https://github.com/edimar-m/Generador-de-memes/blob/master/images/screencapture-proyecto-generador-de-memes-claro.png)
 
 ### Vista del modo oscuro
-![images](images\screencapture-proyecto-generador-de-memes-oscuro.png)
+![images](https://github.com/edimar-m/Generador-de-memes/blob/master/images/screencapture-proyecto-generador-de-memes-oscuro.png)
 
 ***
 ## Agradecimientos🙌
